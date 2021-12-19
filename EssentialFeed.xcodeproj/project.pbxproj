@@ -11,6 +11,8 @@
 		BF675948276F214C007DA5A7 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF67593D276F214C007DA5A7 /* EssentialFeed.framework */; };
 		BF67594D276F214C007DA5A7 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67594C276F214C007DA5A7 /* RemoteFeedLoaderTests.swift */; };
 		BF67594E276F214C007DA5A7 /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = BF675940276F214C007DA5A7 /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF67595F276F40B3007DA5A7 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67595D276F24D4007DA5A7 /* FeedLoader.swift */; };
+		BF675960276F40B3007DA5A7 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67595E276F24D4007DA5A7 /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		BF67593F276F214C007DA5A7 /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				BF67595E276F24D4007DA5A7 /* FeedItem.swift */,
+				BF67595D276F24D4007DA5A7 /* FeedLoader.swift */,
 				BF67595C276F24D4007DA5A7 /* Feed Feature */,
 				BF675940276F214C007DA5A7 /* EssentialFeed.h */,
 				BF675941276F214C007DA5A7 /* EssentialFeed.docc */,
@@ -91,8 +95,6 @@
 		BF67595C276F24D4007DA5A7 /* Feed Feature */ = {
 			isa = PBXGroup;
 			children = (
-				BF67595E276F24D4007DA5A7 /* FeedItem.swift */,
-				BF67595D276F24D4007DA5A7 /* FeedLoader.swift */,
 			);
 			path = "Feed Feature";
 			sourceTree = "<group>";
@@ -206,7 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF67595F276F40B3007DA5A7 /* FeedLoader.swift in Sources */,
 				BF675942276F214C007DA5A7 /* EssentialFeed.docc in Sources */,
+				BF675960276F40B3007DA5A7 /* FeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +414,7 @@
 		BF675955276F214C007DA5A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X7PX2RYRJL;
@@ -431,6 +436,7 @@
 		BF675956276F214C007DA5A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X7PX2RYRJL;
