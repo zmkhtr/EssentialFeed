@@ -126,7 +126,6 @@ class URLSessionHTTPClientTests: XCTestCase {
         
         wait(for: [exp], timeout: 1.0)
         return receivedResult
-
     }
     
     private func anyURL() -> URL {
