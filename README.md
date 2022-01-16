@@ -54,7 +54,12 @@ Given the customer doesn't have connectivity
 
 #### Data:
 - URL
-	@@ -56,41 +67,51 @@ Then the app should display an error message
+
+#### Primary course (happy path):
+1. Execute "Load Feed Items" command with above data.
+2. System downloads data from the URL.
+3. System validates downloaded data.
+4. System creates feed items from valid data.
 5. System delivers feed items.
 
 #### Invalid data – error course (sad path):
