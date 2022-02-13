@@ -10,13 +10,25 @@ import EssentialFeed
 
 extension FeedStoreSpecs where Self: XCTestCase {
     
+    func assertThatDeleteDeliversErrorOnDeletionError(on sut: FeedStore, file: StaticString = #filePath, line: UInt = #line) {
+        let deletionError = deleteCache(from: sut)
+        
+        XCTAssertNotNil(deletionError, "Expected cache deletion to fail")
+    }
+    
+    func assertThatDeleteHasNoSideEffectsOnDeletionError(on sut: FeedStore, file: StaticString = #filePath, line: UInt = #line) {
+        deleteCache(from: sut)
+        
+        expect(sut, toRetrieve: .empty)
+    }
+    
     func assertThatInsertDeliversErrorOnInsertionError(on sut: FeedStore, file: StaticString = #filePath, line: UInt = #line) {
         let insertionError = insert((uniqueImageFeed().local, Date()), to: sut)
         
         XCTAssertNotNil(insertionError, "Expected cache insertion to fail with and error", file: file, line: line)
     }
     
-    func assertThatHasNoSideEffectsOnInsertionError(on sut: FeedStore, file: StaticString = #filePath, line: UInt = #line) {
+    func assertThatInsertHasNoSideEffectsOnInsertionError(on sut: FeedStore, file: StaticString = #filePath, line: UInt = #line) {
         insert((uniqueImageFeed().local, Date()), to: sut)
         
         expect(sut, toRetrieve: .empty)
