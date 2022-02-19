@@ -16,9 +16,9 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BF2915212781928400370C05"
-            BuildableName = "EssentialFeedAPIEndToEndTests.xctest"
-            BlueprintName = "EssentialFeedAPIEndToEndTests"
+            BlueprintIdentifier = "BF2915012781924C00370C05"
+            BuildableName = "EssentialFeed.framework"
+            BlueprintName = "EssentialFeed"
             ReferencedContainer = "container:EssentialFeed.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
