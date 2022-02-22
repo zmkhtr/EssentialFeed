@@ -315,8 +315,7 @@
 		BF842DBC27C105980041C95F /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				BFEDDECF27C5096B0016AA1C /* Helpers */,
-				BF842DC827C2179F0041C95F /* FeedViewControllerTests.swift */,
+				BFEDDEDA27C50B980016AA1C /* Controllers */,
 			);
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
@@ -377,6 +376,15 @@
 				BFEDDED627C50A8D0016AA1C /* UIControl+TestHelpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BFEDDEDA27C50B980016AA1C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFEDDECF27C5096B0016AA1C /* Helpers */,
+				BF842DC827C2179F0041C95F /* FeedViewControllerTests.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		BFFA4BFF2793D58200A7AE72 /* Feed API */ = {
