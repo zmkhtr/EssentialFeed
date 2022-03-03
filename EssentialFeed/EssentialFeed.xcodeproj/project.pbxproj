@@ -74,6 +74,7 @@
 		BFF69C3827D0339B00B26A3E /* FeedViewControllerTests+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF69C3727D0339B00B26A3E /* FeedViewControllerTests+Localization.swift */; };
 		BFF69C3927D0346D00B26A3E /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFF69C3B27D0346D00B26A3E /* Feed.strings */; };
 		BFF69C4027D0363C00B26A3E /* FeedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF69C3F27D0363C00B26A3E /* FeedLocalizationTests.swift */; };
+		BFF69C4227D097F000B26A3E /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF69C4127D097F000B26A3E /* MainQueueDispatchDecorator.swift */; };
 		BFFA4C042793D5FE00A7AE72 /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA4C032793D5FE00A7AE72 /* CacheFeedUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -194,6 +195,7 @@
 		BFF69C3C27D034B600B26A3E /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
 		BFF69C3D27D034F900B26A3E /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
 		BFF69C3F27D0363C00B26A3E /* FeedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizationTests.swift; sourceTree = "<group>"; };
+		BFF69C4127D097F000B26A3E /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		BFFA4C032793D5FE00A7AE72 /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -491,6 +493,7 @@
 			isa = PBXGroup;
 			children = (
 				BFEDDEF227C527D60016AA1C /* FeedUIComposer.swift */,
+				BFF69C4127D097F000B26A3E /* MainQueueDispatchDecorator.swift */,
 			);
 			path = Composers;
 			sourceTree = "<group>";
@@ -825,6 +828,7 @@
 				BF5D7BB327CCA16A0021CDE7 /* FeedViewModel.swift in Sources */,
 				BF842DD627C3C5840041C95F /* UIView+Shimmering.swift in Sources */,
 				BF78E3B427CFAD96007B43BD /* UIImageView+Animations.swift in Sources */,
+				BFF69C4227D097F000B26A3E /* MainQueueDispatchDecorator.swift in Sources */,
 				BF5D7BB527CCA1870021CDE7 /* FeedLoadingViewModel.swift in Sources */,
 				BF842DD227C225270041C95F /* FeedViewController.swift in Sources */,
 				BF842DD427C3A21D0041C95F /* FeedImageCell.swift in Sources */,
