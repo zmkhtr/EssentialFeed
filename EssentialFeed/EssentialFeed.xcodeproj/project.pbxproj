@@ -84,6 +84,7 @@
 		BFFD822C27D909CB002B0F16 /* FeedLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD822B27D909CB002B0F16 /* FeedLoadingViewModel.swift */; };
 		BFFD822E27D909DB002B0F16 /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD822D27D909DB002B0F16 /* FeedErrorViewModel.swift */; };
 		BFFD822F27D90C2B002B0F16 /* FeedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF69C3F27D0363C00B26A3E /* FeedLocalizationTests.swift */; };
+		BFFD823127D90D32002B0F16 /* FeedImagePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD823027D90D32002B0F16 /* FeedImagePresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -213,6 +214,7 @@
 		BFFD822927D909AC002B0F16 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		BFFD822B27D909CB002B0F16 /* FeedLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoadingViewModel.swift; sourceTree = "<group>"; };
 		BFFD822D27D909DB002B0F16 /* FeedErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedErrorViewModel.swift; sourceTree = "<group>"; };
+		BFFD823027D90D32002B0F16 /* FeedImagePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImagePresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -553,6 +555,7 @@
 			children = (
 				BFF69C3F27D0363C00B26A3E /* FeedLocalizationTests.swift */,
 				BFFD821C27D8FEF8002B0F16 /* FeedPresenterTests.swift */,
+				BFFD823027D90D32002B0F16 /* FeedImagePresenterTests.swift */,
 			);
 			path = "Feed Presentation";
 			sourceTree = "<group>";
@@ -843,6 +846,7 @@
 				BFFD822F27D90C2B002B0F16 /* FeedLocalizationTests.swift in Sources */,
 				BF2915172781927400370C05 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 				BF2915392781941900370C05 /* URLSessionHTTPClientTests.swift in Sources */,
+				BFFD823127D90D32002B0F16 /* FeedImagePresenterTests.swift in Sources */,
 				BF5C7E1C27AFB6D10074C9DE /* FeedStoreSpy.swift in Sources */,
 				BF4859B127B174CA00142C7F /* SharedTestHelpers.swift in Sources */,
 				BFFA4C042793D5FE00A7AE72 /* CacheFeedUseCaseTests.swift in Sources */,
