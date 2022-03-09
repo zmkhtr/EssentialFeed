@@ -81,6 +81,7 @@
 		BFF69C4A27D0995600B26A3E /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF69C4927D0995600B26A3E /* FeedViewAdapter.swift */; };
 		BFFA4C042793D5FE00A7AE72 /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA4C032793D5FE00A7AE72 /* CacheFeedUseCaseTests.swift */; };
 		BFFD821527D8F9B5002B0F16 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD821427D8F9B5002B0F16 /* ErrorView.swift */; };
+		BFFD821827D8FC65002B0F16 /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD821727D8FC65002B0F16 /* FeedErrorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +208,7 @@
 		BFF69C4927D0995600B26A3E /* FeedViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewAdapter.swift; sourceTree = "<group>"; };
 		BFFA4C032793D5FE00A7AE72 /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 		BFFD821427D8F9B5002B0F16 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		BFFD821727D8FC65002B0F16 /* FeedErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedErrorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +364,7 @@
 				BF5D7BB427CCA1870021CDE7 /* FeedLoadingViewModel.swift */,
 				BF5D7BB027CC9B590021CDE7 /* FeedImagePresenter.swift */,
 				BF5D7BAC27CB5FA60021CDE7 /* FeedImageViewModel.swift */,
+				BFFD821727D8FC65002B0F16 /* FeedErrorViewModel.swift */,
 				BFF69C3B27D0346D00B26A3E /* Feed.strings */,
 			);
 			path = "Feed Presentation";
@@ -860,6 +863,7 @@
 				BFF69C4627D098B700B26A3E /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 				BF842DD427C3A21D0041C95F /* FeedImageCell.swift in Sources */,
 				BFEDDEF027C5245E0016AA1C /* FeedImageCellController.swift in Sources */,
+				BFFD821827D8FC65002B0F16 /* FeedErrorViewModel.swift in Sources */,
 				BFF69C4A27D0995600B26A3E /* FeedViewAdapter.swift in Sources */,
 				BFEDDEF327C527D60016AA1C /* FeedUIComposer.swift in Sources */,
 			);
