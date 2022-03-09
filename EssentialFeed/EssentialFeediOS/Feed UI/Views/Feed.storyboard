@@ -19,23 +19,24 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4n-IJ-zt7">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lum-Ab-akc">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <inset key="contentEdgeInsets" minX="0.0" minY="8" maxX="0.0" maxY="8"/>
-                                    <state key="normal" title="Error label">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
-                                </button>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" red="0.99951404330000004" green="0.41759261489999999" blue="0.4154433012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <gestureRecognizers/>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="X4n-IJ-zt7" secondAttribute="trailing" id="4XQ-m1-Vfe"/>
-                                <constraint firstItem="X4n-IJ-zt7" firstAttribute="leading" secondItem="rE3-T4-IoL" secondAttribute="leading" id="Efd-Bf-lyj"/>
-                                <constraint firstAttribute="bottom" secondItem="X4n-IJ-zt7" secondAttribute="bottom" id="LX0-4b-Odi"/>
-                                <constraint firstItem="X4n-IJ-zt7" firstAttribute="top" secondItem="rE3-T4-IoL" secondAttribute="top" id="rHk-as-Mam"/>
+                                <constraint firstItem="Lum-Ab-akc" firstAttribute="leading" secondItem="rE3-T4-IoL" secondAttribute="leading" id="M8s-34-sqv"/>
+                                <constraint firstAttribute="trailing" secondItem="Lum-Ab-akc" secondAttribute="trailing" id="TVP-H2-IXE"/>
+                                <constraint firstAttribute="bottom" secondItem="Lum-Ab-akc" secondAttribute="bottom" id="ikY-0V-wX3"/>
+                                <constraint firstItem="Lum-Ab-akc" firstAttribute="top" secondItem="rE3-T4-IoL" secondAttribute="top" id="l3J-KR-htB"/>
                             </constraints>
+                            <connections>
+                                <outlet property="label" destination="Lum-Ab-akc" id="wJl-db-cPd"/>
+                            </connections>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="IRG-VG-u37">
                             <rect key="frame" x="0.0" y="681" width="414" height="16"/>
