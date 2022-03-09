@@ -21,9 +21,13 @@
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lum-Ab-akc">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                                    <gestureRecognizers/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="BBi-3x-uMS" appends="YES" id="46a-ad-dDp"/>
+                                    </connections>
                                 </label>
                             </subviews>
                             <color key="backgroundColor" red="0.99951404330000004" green="0.41759261489999999" blue="0.4154433012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -36,6 +40,7 @@
                             </constraints>
                             <connections>
                                 <outlet property="label" destination="Lum-Ab-akc" id="wJl-db-cPd"/>
+                                <outletCollection property="gestureRecognizers" destination="BBi-3x-uMS" appends="YES" id="A3x-h7-egi"/>
                             </connections>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="IRG-VG-u37">
@@ -170,6 +175,11 @@ Location</string>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAq-Xw-96a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="BBi-3x-uMS">
+                    <connections>
+                        <action selector="hideMessageAnimated" destination="rE3-T4-IoL" id="HQP-QM-xuL"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="860.86956521739137" y="142.63392857142856"/>
         </scene>
