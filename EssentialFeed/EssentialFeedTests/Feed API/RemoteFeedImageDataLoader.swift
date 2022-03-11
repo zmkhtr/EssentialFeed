@@ -77,6 +77,15 @@ class RemoteFeedImageDataLoaderTests: XCTestCase {
         }
     }
     
+    func test_loadImageDataFromURL_deliversInvalidDataErrorOn200HTTPResponse() {
+        let (sut, client) = makeSUT()
+        
+        expect(sut, toCompleteWith: .failure(RemoteFeedImageDataLoader.Error.invalidData), when: {
+            let emptyData = Data()
+            client.complete(withStatusCode: 200, data: emptyData)
+        })
+    }
+    
     private func makeSUT(url: URL = anyURL(), file: StaticString = #filePath, line: UInt = #line) -> (sut: RemoteFeedImageDataLoader, client: HTTPClientSpy) {
         let client = HTTPClientSpy()
         let sut = RemoteFeedImageDataLoader(client: client)
