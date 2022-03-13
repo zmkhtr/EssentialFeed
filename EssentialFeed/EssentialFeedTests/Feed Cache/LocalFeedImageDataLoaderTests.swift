@@ -84,10 +84,6 @@ class LocalFeedImageDataLoaderTests: XCTestCase {
         })
     }
     
-    private func notFound() -> FeedImageDataLoader.Result {
-        return .failure(LocalFeedImageDataLoader.Error.notFound)
-    }
-    
     // MARK: - Helpers
     
     private func makeSUT(currentDate: @escaping () -> Date = Date.init, file: StaticString = #filePath, line: UInt = #line) -> (sut: LocalFeedImageDataLoader, store: StoreSpy) {
@@ -100,6 +96,10 @@ class LocalFeedImageDataLoaderTests: XCTestCase {
     
     private func failed() -> FeedImageDataLoader.Result {
         return .failure(LocalFeedImageDataLoader.Error.failed)
+    }
+    
+    private func notFound() -> FeedImageDataLoader.Result {
+        return .failure(LocalFeedImageDataLoader.Error.notFound)
     }
     
     private func expect(_ sut: LocalFeedImageDataLoader, toCompleteWith expectedResult: FeedImageDataLoader.Result, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
