@@ -17,7 +17,7 @@
 		BFFD82D727E621CD002B0F16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFD82D527E621CD002B0F16 /* Main.storyboard */; };
 		BFFD82D927E621CF002B0F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFD82D827E621CF002B0F16 /* Assets.xcassets */; };
 		BFFD82DC27E621CF002B0F16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFD82DA27E621CF002B0F16 /* LaunchScreen.storyboard */; };
-		BFFD82E727E621CF002B0F16 /* EssentialAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD82E627E621CF002B0F16 /* EssentialAppTests.swift */; };
+		BFFD82E727E621CF002B0F16 /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD82E627E621CF002B0F16 /* FeedLoaderWithFallbackComposite.swift */; };
 		BFFD82F127E621CF002B0F16 /* EssentialAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD82F027E621CF002B0F16 /* EssentialAppUITests.swift */; };
 		BFFD82F327E621CF002B0F16 /* EssentialAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD82F227E621CF002B0F16 /* EssentialAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -66,7 +66,7 @@
 		BFFD82DB27E621CF002B0F16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFFD82DD27E621CF002B0F16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFFD82E227E621CF002B0F16 /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFFD82E627E621CF002B0F16 /* EssentialAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppTests.swift; sourceTree = "<group>"; };
+		BFFD82E627E621CF002B0F16 /* FeedLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 		BFFD82EC27E621CF002B0F16 /* EssentialAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFD82F027E621CF002B0F16 /* EssentialAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITests.swift; sourceTree = "<group>"; };
 		BFFD82F227E621CF002B0F16 /* EssentialAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		BFFD82E527E621CF002B0F16 /* EssentialAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				BFFD82E627E621CF002B0F16 /* EssentialAppTests.swift */,
+				BFFD82E627E621CF002B0F16 /* FeedLoaderWithFallbackComposite.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
@@ -302,7 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFFD82E727E621CF002B0F16 /* EssentialAppTests.swift in Sources */,
+				BFFD82E727E621CF002B0F16 /* FeedLoaderWithFallbackComposite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
