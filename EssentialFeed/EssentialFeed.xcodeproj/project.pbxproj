@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF00E17527EB63F00051F8F0 /* FeedImageDataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00E17427EB63F00051F8F0 /* FeedImageDataCache.swift */; };
 		BF1CD90627E73FB900B409DA /* FeedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CD90527E73FB900B409DA /* FeedCache.swift */; };
 		BF2915172781927400370C05 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2915162781927400370C05 /* LoadFeedFromRemoteUseCaseTests.swift */; };
 		BF2915182781927400370C05 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2915022781924C00370C05 /* EssentialFeed.framework */; };
@@ -154,6 +155,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF00E17427EB63F00051F8F0 /* FeedImageDataCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataCache.swift; sourceTree = "<group>"; };
 		BF1CD90527E73FB900B409DA /* FeedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCache.swift; sourceTree = "<group>"; };
 		BF2915022781924C00370C05 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2915142781927400370C05 /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -342,6 +344,7 @@
 				BF29152E278192D800370C05 /* FeedLoader.swift */,
 				BF1CD90527E73FB900B409DA /* FeedCache.swift */,
 				BFEDDEEA27C51C0C0016AA1C /* FeedImageDataLoader.swift */,
+				BF00E17427EB63F00051F8F0 /* FeedImageDataCache.swift */,
 			);
 			path = "Feed Feature";
 			sourceTree = "<group>";
@@ -880,6 +883,7 @@
 				BFC9508C27944EBA0041CB80 /* LocalFeedLoader.swift in Sources */,
 				BF2915352781939700370C05 /* HTTPClient.swift in Sources */,
 				BFFD824627DE3F97002B0F16 /* FeedImageDataStore.swift in Sources */,
+				BF00E17527EB63F00051F8F0 /* FeedImageDataCache.swift in Sources */,
 				BF29152F278192D800370C05 /* FeedLoader.swift in Sources */,
 				BFFD822727D908DE002B0F16 /* FeedPresenter.swift in Sources */,
 				BF29152D278192D000370C05 /* FeedImage.swift in Sources */,
