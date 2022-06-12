@@ -221,12 +221,12 @@
 			children = (
 				BF1CD8FA27E6EB6F00B409DA /* Helpers */,
 				BF493E7028561B650072F13E /* SceneDelegateTests.swift */,
+				BF493E92285620F10072F13E /* FeedAcceptanceTests.swift */,
 				BF493E9028561F160072F13E /* FeedUIIntegrationTests.swift */,
 				BFFD82E627E621CF002B0F16 /* FeedLoaderWithFallbackComposite.swift */,
 				BF1CD8F627E6E10400B409DA /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
 				BF1CD8FF27E737FC00B409DA /* FeedLoaderCacheDecoratorTests.swift */,
 				BF00E0E027E9E3550051F8F0 /* FeedImageDataLoaderCacheDecoratorTests.swift */,
-				BF493E92285620F10072F13E /* FeedAcceptanceTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
