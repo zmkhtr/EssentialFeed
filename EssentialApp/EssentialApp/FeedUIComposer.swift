@@ -5,9 +5,9 @@
 //  Created by PT.Koanba on 22/02/22.
 //
 
-import Foundation
-import EssentialFeed
 import UIKit
+import EssentialFeed
+import EssentialFeediOS
 
 public final class FeedUIComposer {
     private init() {}
