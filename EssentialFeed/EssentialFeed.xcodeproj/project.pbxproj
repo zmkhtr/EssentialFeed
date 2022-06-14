@@ -373,13 +373,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		BF33FD8628581D9E00610CA3 /* snapshots */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = snapshots;
-			sourceTree = "<group>";
-		};
 		BF5C7E1A27AFB6C00074C9DE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,7 +395,6 @@
 		BF842DBC27C105980041C95F /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				BF33FD8628581D9E00610CA3 /* snapshots */,
 				BF33FD8328581CCA00610CA3 /* Helpers */,
 				BF33FD7E2857847800610CA3 /* FeedSnapshotTests.swift */,
 			);
