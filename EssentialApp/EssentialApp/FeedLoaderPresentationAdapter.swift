@@ -22,7 +22,9 @@ final class FeedLoaderPresentationAdapter: FeedViewControllerDelegate {
     func didRequestFeedRefresh() {
         presenter?.didStartLoadingFeed()
         
-        cacellable = feedLoader().sink { [weak self] completion in
+        cacellable = feedLoader()
+            .dispatchOnMainQueue()
+            .sink { [weak self] completion in
             switch completion {
             case .finished: break
             case let .failure(error):
