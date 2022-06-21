@@ -28,8 +28,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         LocalFeedLoader(store: store, currentDate: Date.init)
     }()
     
-    private lazy var remoteFeedloader: RemoteFeedLoader = {
-        RemoteFeedLoader(url: URL(string: "https://ile-api.essentialdeveloper.com/essential-feed/v1/feed")!, client: httpClient)
+    private lazy var remoteFeedloader: RemoteLoader = {
+        RemoteLoader(url: URL(string: "https://ile-api.essentialdeveloper.com/essential-feed/v1/feed")!, client: httpClient, mapper: FeedItemsMapper.map)
     }()
     
     convenience init(httpClient: HTTPClient, store: FeedImageDataStore & FeedStore) {
