@@ -28,10 +28,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         LocalFeedLoader(store: store, currentDate: Date.init)
     }()
     
-    private lazy var remoteFeedloader: RemoteLoader = {
-        RemoteLoader(url: URL(string: "https://ile-api.essentialdeveloper.com/essential-feed/v1/feed")!, client: httpClient, mapper: FeedItemsMapper.map)
-    }()
-    
     convenience init(httpClient: HTTPClient, store: FeedImageDataStore & FeedStore) {
         self.init()
         self.httpClient = httpClient
@@ -81,5 +77,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             })
     }
 }
-
-extension RemoteLoader: FeedLoader where Resource == [FeedImage] {}
