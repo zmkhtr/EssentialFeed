@@ -61,6 +61,7 @@
 		BFBA4B5F27BBD6C300E591E9 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4859B027B174CA00142C7F /* SharedTestHelpers.swift */; };
 		BFC48DFF286C58D3005DCE27 /* SharedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC48DFE286C58D3005DCE27 /* SharedLocalizationTests.swift */; };
 		BFC48E00286C595F005DCE27 /* Shared.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFC48E02286C595F005DCE27 /* Shared.strings */; };
+		BFC48E06286C5CCF005DCE27 /* SharedLocalizationTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC48E05286C5CCF005DCE27 /* SharedLocalizationTestHelpers.swift */; };
 		BFC9508C27944EBA0041CB80 /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC9508B27944EBA0041CB80 /* LocalFeedLoader.swift */; };
 		BFC9508E27944F560041CB80 /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC9508D27944F560041CB80 /* FeedStore.swift */; };
 		BFC95092279466F80041CB80 /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC95091279466F80041CB80 /* LocalFeedImage.swift */; };
@@ -198,6 +199,7 @@
 		BFC48E01286C595F005DCE27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Shared.strings; sourceTree = "<group>"; };
 		BFC48E03286C5963005DCE27 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Shared.strings; sourceTree = "<group>"; };
 		BFC48E04286C5964005DCE27 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Shared.strings"; sourceTree = "<group>"; };
+		BFC48E05286C5CCF005DCE27 /* SharedLocalizationTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTestHelpers.swift; sourceTree = "<group>"; };
 		BFC9508B27944EBA0041CB80 /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
 		BFC9508D27944F560041CB80 /* FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStore.swift; sourceTree = "<group>"; };
 		BFC95091279466F80041CB80 /* LocalFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImage.swift; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 			children = (
 				BF29153B2781943700370C05 /* XCTestCase+MemoryLeakTracking.swift */,
 				BF4859B027B174CA00142C7F /* SharedTestHelpers.swift */,
+				BFC48E05286C5CCF005DCE27 /* SharedLocalizationTestHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -952,6 +955,7 @@
 				BFFD824227DE134A002B0F16 /* URLProtocolStub.swift in Sources */,
 				BFC48DFF286C58D3005DCE27 /* SharedLocalizationTests.swift in Sources */,
 				BF99633F27B8E91600787A59 /* FeedStoreSpecs.swift in Sources */,
+				BFC48E06286C5CCF005DCE27 /* SharedLocalizationTestHelpers.swift in Sources */,
 				BF29153C2781943700370C05 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				BFFD823827DB9CC7002B0F16 /* FeedImageDataMapperTests.swift in Sources */,
 				BF99634127B8E9A600787A59 /* XCTestCase+FeedStoreSpecs.swift in Sources */,
