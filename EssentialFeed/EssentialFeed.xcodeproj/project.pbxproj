@@ -70,6 +70,9 @@
 		BFCEB7A7286B0AB8003CA679 /* LoadResourcePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB7A6286B0AB8003CA679 /* LoadResourcePresenterTests.swift */; };
 		BFCEB7AA286B0B87003CA679 /* LoadResourcePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB7A9286B0B87003CA679 /* LoadResourcePresenter.swift */; };
 		BFEDDEF027C5245E0016AA1C /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDDEEF27C5245E0016AA1C /* FeedImageCellController.swift */; };
+		BFF552BF288D49B00035D4B6 /* ImageCommentsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF552BE288D49B00035D4B6 /* ImageCommentsPresenterTests.swift */; };
+		BFF552C2288D4A640035D4B6 /* ImageCommentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF552C1288D4A640035D4B6 /* ImageCommentsPresenter.swift */; };
+		BFF552C4288D4AB60035D4B6 /* ImageComments.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFF552C3288D4AB60035D4B6 /* ImageComments.strings */; };
 		BFFA4C042793D5FE00A7AE72 /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFA4C032793D5FE00A7AE72 /* CacheFeedUseCaseTests.swift */; };
 		BFFD821527D8F9B5002B0F16 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD821427D8F9B5002B0F16 /* ErrorView.swift */; };
 		BFFD821A27D8FD01002B0F16 /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD821927D8FD01002B0F16 /* UIRefreshControl+Helpers.swift */; };
@@ -211,6 +214,9 @@
 		BFCEB7A9286B0B87003CA679 /* LoadResourcePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenter.swift; sourceTree = "<group>"; };
 		BFEDDEEA27C51C0C0016AA1C /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
 		BFEDDEEF27C5245E0016AA1C /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
+		BFF552BE288D49B00035D4B6 /* ImageCommentsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsPresenterTests.swift; sourceTree = "<group>"; };
+		BFF552C1288D4A640035D4B6 /* ImageCommentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsPresenter.swift; sourceTree = "<group>"; };
+		BFF552C3288D4AB60035D4B6 /* ImageComments.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ImageComments.strings; sourceTree = "<group>"; };
 		BFF69C3F27D0363C00B26A3E /* FeedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizationTests.swift; sourceTree = "<group>"; };
 		BFFA4C032793D5FE00A7AE72 /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 		BFFD821427D8F9B5002B0F16 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
@@ -326,6 +332,7 @@
 				BF6A7F90285DA62700402B36 /* Shared API Infra */,
 				BF6A7F86285CB23E00402B36 /* Image Comments Feature */,
 				BF6A7F95285DA6DF00402B36 /* Image Comments API */,
+				BFF552C0288D4A3F0035D4B6 /* Image Comments Presentation */,
 				BFC9508A27944EAC0041CB80 /* Feed Cache */,
 				BF29150E2781925300370C05 /* Feed Feature */,
 				BF29150F2781925B00370C05 /* Feed API */,
@@ -362,6 +369,7 @@
 				BFCEB7A5286B0A95003CA679 /* Shared Presentation */,
 				BF6A7F93285DA65E00402B36 /* Shared API Infra */,
 				BF6A7F96285DA71100402B36 /* Image Comments API */,
+				BFF552BD288D49820035D4B6 /* Image Comments Presentation */,
 				BFFA4BFF2793D58200A7AE72 /* Feed API */,
 				BFFA4C002793D5D000A7AE72 /* Feed Cache */,
 				BFFD821B27D8FED3002B0F16 /* Feed Presentation */,
@@ -591,6 +599,23 @@
 			);
 			name = "Feed Image Loader";
 			path = "Feed UI/Feed Image Loader";
+			sourceTree = "<group>";
+		};
+		BFF552BD288D49820035D4B6 /* Image Comments Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BFF552BE288D49B00035D4B6 /* ImageCommentsPresenterTests.swift */,
+			);
+			path = "Image Comments Presentation";
+			sourceTree = "<group>";
+		};
+		BFF552C0288D4A3F0035D4B6 /* Image Comments Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BFF552C1288D4A640035D4B6 /* ImageCommentsPresenter.swift */,
+				BFF552C3288D4AB60035D4B6 /* ImageComments.strings */,
+			);
+			path = "Image Comments Presentation";
 			sourceTree = "<group>";
 		};
 		BFFA4BFF2793D58200A7AE72 /* Feed API */ = {
@@ -855,6 +880,7 @@
 			files = (
 				BFFD822827D90971002B0F16 /* Feed.strings in Resources */,
 				BFC48E00286C595F005DCE27 /* Shared.strings in Resources */,
+				BFF552C4288D4AB60035D4B6 /* ImageComments.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -912,6 +938,7 @@
 				BF4859B327B2A34B00142C7F /* FeedCachePolicy.swift in Sources */,
 				BF6A7F88285CB2EE00402B36 /* ImageComment.swift in Sources */,
 				BF99634A27B9413B00787A59 /* FeedStore.xcdatamodeld in Sources */,
+				BFF552C2288D4A640035D4B6 /* ImageCommentsPresenter.swift in Sources */,
 				BFFD829F27E38FEB002B0F16 /* CoreDataFeedStore+FeedStore.swift in Sources */,
 				BFC95092279466F80041CB80 /* LocalFeedImage.swift in Sources */,
 				BFFD822A27D909AC002B0F16 /* FeedViewModel.swift in Sources */,
@@ -962,6 +989,7 @@
 				BF5C7E1927AFB55B0074C9DE /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
 				BFFD824227DE134A002B0F16 /* URLProtocolStub.swift in Sources */,
 				BFC48DFF286C58D3005DCE27 /* SharedLocalizationTests.swift in Sources */,
+				BFF552BF288D49B00035D4B6 /* ImageCommentsPresenterTests.swift in Sources */,
 				BF99633F27B8E91600787A59 /* FeedStoreSpecs.swift in Sources */,
 				BFC48E06286C5CCF005DCE27 /* SharedLocalizationTestHelpers.swift in Sources */,
 				BF29153C2781943700370C05 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
