@@ -479,7 +479,7 @@
 		BF842DB027C105970041C95F /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
-				BFEDDEEC27C51C130016AA1C /* Feed Image Loader */,
+				BFAAD3542896BCDD002B2A68 /* Shared UI */,
 				BFEDDEE727C51B900016AA1C /* Feed UI */,
 			);
 			path = EssentialFeediOS;
@@ -521,6 +521,42 @@
 				BFFD829E27E38FEB002B0F16 /* CoreDataFeedStore+FeedStore.swift */,
 			);
 			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		BFAAD3542896BCDD002B2A68 /* Shared UI */ = {
+			isa = PBXGroup;
+			children = (
+				BFAAD3552896BCF5002B2A68 /* Controllers */,
+				BFAAD3562896BD06002B2A68 /* Views */,
+			);
+			path = "Shared UI";
+			sourceTree = "<group>";
+		};
+		BFAAD3552896BCF5002B2A68 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF842DD127C225270041C95F /* ListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BFAAD3562896BD06002B2A68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFAAD3572896BD31002B2A68 /* Helpers */,
+				BFFD821427D8F9B5002B0F16 /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BFAAD3572896BD31002B2A68 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BF78E3B127CFAC86007B43BD /* UITableView+Dequeueing.swift */,
+				BFFD821927D8FD01002B0F16 /* UIRefreshControl+Helpers.swift */,
+				BF33FD8B28581E9400610CA3 /* UITableView+HeaderSizing.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		BFBA4B5427BBD16B00E591E9 /* EssentialFeedCacheIntegrationTests */ = {
@@ -579,7 +615,6 @@
 		BFEDDEE827C51B900016AA1C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BF842DD127C225270041C95F /* ListViewController.swift */,
 				BFEDDEEF27C5245E0016AA1C /* FeedImageCellController.swift */,
 			);
 			path = Controllers;
@@ -592,17 +627,8 @@
 				BF842DD327C3A21D0041C95F /* FeedImageCell.swift */,
 				BF78E3AD27CF9857007B43BD /* Feed.storyboard */,
 				BF78E3AF27CF9916007B43BD /* Feed.xcassets */,
-				BFFD821427D8F9B5002B0F16 /* ErrorView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		BFEDDEEC27C51C130016AA1C /* Feed Image Loader */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Feed Image Loader";
-			path = "Feed UI/Feed Image Loader";
 			sourceTree = "<group>";
 		};
 		BFF552BD288D49820035D4B6 /* Image Comments Presentation */ = {
@@ -654,9 +680,6 @@
 			children = (
 				BF78E3B327CFAD96007B43BD /* UIImageView+Animations.swift */,
 				BF842DD527C3C5840041C95F /* UIView+Shimmering.swift */,
-				BF78E3B127CFAC86007B43BD /* UITableView+Dequeueing.swift */,
-				BFFD821927D8FD01002B0F16 /* UIRefreshControl+Helpers.swift */,
-				BF33FD8B28581E9400610CA3 /* UITableView+HeaderSizing.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
