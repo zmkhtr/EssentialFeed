@@ -68,6 +68,19 @@ class CommentsUIIntegrationTests: FeedUIIntegrationTests {
         assertThat(sut, isRendering: [comment0, comment1])
     }
     
+    func test_loadCommentsCompletion_rendersSuccessfullyLoadedEmptyCommentsAfterNonEmptyFeed() {
+        let comment = makeComment()
+        let (sut, loader) = makeSUT()
+        
+        sut.loadViewIfNeeded()
+        loader.completeCommentsLoading(with: [comment], at: 0)
+        assertThat(sut, isRendering: [comment])
+        
+        sut.simulateUserInitiatedReload()
+        loader.completeCommentsLoading(with: [], at: 1)
+        assertThat(sut, isRendering: [ImageComment]())
+    }
+    
     func test_loadCommentsCompletion_doesNotAlterCurrentRenderingStateOnError() {
         let comment = makeComment()
         let (sut, loader) = makeSUT()
@@ -81,17 +94,16 @@ class CommentsUIIntegrationTests: FeedUIIntegrationTests {
         assertThat(sut, isRendering: [comment])
     }
     
-    func test_loadCommentsCompletion_rendersSuccessfullyLoadedEmptyCommentsAfterNonEmptyFeed() {
-        let comment = makeComment()
+    func test_loadCommentsCompletion_dispatchesFromBackgroundToMainThread() {
         let (sut, loader) = makeSUT()
-        
         sut.loadViewIfNeeded()
-        loader.completeCommentsLoading(with: [comment], at: 0)
-        assertThat(sut, isRendering: [comment])
         
-        sut.simulateUserInitiatedReload()
-        loader.completeCommentsLoading(with: [], at: 1)
-        assertThat(sut, isRendering: [ImageComment]())
+        let exp = expectation(description: "Wait for background queue")
+        DispatchQueue.global().async {
+            loader.completeCommentsLoading(at: 0)
+            exp.fulfill()
+        }
+        wait(for: [exp], timeout: 1.0)
     }
     
     override func test_loadFeedCompletion_rendersErrorMessageOnError() {
