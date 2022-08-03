@@ -34,6 +34,8 @@
 		BF493E93285620F10072F13E /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF493E92285620F10072F13E /* FeedAcceptanceTests.swift */; };
 		BF493E9528562FFE0072F13E /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF493E9428562FFE0072F13E /* HTTPClientStub.swift */; };
 		BF493E972856304C0072F13E /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF493E962856304C0072F13E /* InMemoryFeedStore.swift */; };
+		BF7B2AC5289AAB4900DB5F28 /* CommentsUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7B2AC4289AAB4900DB5F28 /* CommentsUIIntegrationTests.swift */; };
+		BF7B2AC7289AAC2500DB5F28 /* CommentsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7B2AC6289AAC2500DB5F28 /* CommentsUIComposer.swift */; };
 		BFCA00F9285A194B00747012 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA00F8285A194B00747012 /* CombineHelpers.swift */; };
 		BFFD82D027E621CD002B0F16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD82CF27E621CD002B0F16 /* AppDelegate.swift */; };
 		BFFD82D227E621CD002B0F16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFD82D127E621CD002B0F16 /* SceneDelegate.swift */; };
@@ -92,6 +94,8 @@
 		BF493E92285620F10072F13E /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 		BF493E9428562FFE0072F13E /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
 		BF493E962856304C0072F13E /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
+		BF7B2AC4289AAB4900DB5F28 /* CommentsUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIIntegrationTests.swift; sourceTree = "<group>"; };
+		BF7B2AC6289AAC2500DB5F28 /* CommentsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIComposer.swift; sourceTree = "<group>"; };
 		BFCA00F8285A194B00747012 /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
 		BFFD82CC27E621CD002B0F16 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFD82CF27E621CD002B0F16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 				BFFD82D127E621CD002B0F16 /* SceneDelegate.swift */,
 				BFCA00F8285A194B00747012 /* CombineHelpers.swift */,
 				BF493E7428561EBF0072F13E /* FeedUIComposer.swift */,
+				BF7B2AC6289AAC2500DB5F28 /* CommentsUIComposer.swift */,
 				BF493E7728561EC00072F13E /* WeakRefVirtualProxy.swift */,
 				BF493E7228561EBF0072F13E /* LoadResourcePresentationAdapter.swift */,
 				BF493E7328561EBF0072F13E /* FeedViewAdapter.swift */,
@@ -197,6 +202,7 @@
 				BF493E7028561B650072F13E /* SceneDelegateTests.swift */,
 				BF493E92285620F10072F13E /* FeedAcceptanceTests.swift */,
 				BF493E9028561F160072F13E /* FeedUIIntegrationTests.swift */,
+				BF7B2AC4289AAB4900DB5F28 /* CommentsUIIntegrationTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
@@ -307,6 +313,7 @@
 				BF493E7928561EC00072F13E /* LoadResourcePresentationAdapter.swift in Sources */,
 				BF493E7828561EC00072F13E /* WeakRefVirtualProxy.swift in Sources */,
 				BF493E7C28561EC00072F13E /* FeedViewAdapter.swift in Sources */,
+				BF7B2AC7289AAC2500DB5F28 /* CommentsUIComposer.swift in Sources */,
 				BF493E7D28561EC00072F13E /* FeedUIComposer.swift in Sources */,
 				BFCA00F9285A194B00747012 /* CombineHelpers.swift in Sources */,
 			);
@@ -316,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7B2AC5289AAB4900DB5F28 /* CommentsUIIntegrationTests.swift in Sources */,
 				BF493E8928561EF30072F13E /* FeedUIIntegrationTests+LoaderSpy.swift in Sources */,
 				BF493E8B28561EF30072F13E /* FeedUIIntegrationTests+Localization.swift in Sources */,
 				BF1CD8FE27E6EBDC00B409DA /* SharedTestHelpers.swift in Sources */,
