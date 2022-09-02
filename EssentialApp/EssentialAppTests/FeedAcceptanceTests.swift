@@ -27,6 +27,14 @@ class FeedAcceptanceTests: XCTestCase {
         XCTAssertEqual(feed.renderedFeedImageData(at: 1), makeImageData1())
         XCTAssertEqual(feed.renderedFeedImageData(at: 2), makeImageData2())
         XCTAssertTrue(feed.canLoadMoreFeed)
+        
+        feed.simulateLoadMoreFeedAction()
+        
+        XCTAssertEqual(feed.numberOfRenderedFeedImageView(), 3)
+        XCTAssertEqual(feed.renderedFeedImageData(at: 0), makeImageData0())
+        XCTAssertEqual(feed.renderedFeedImageData(at: 1), makeImageData1())
+        XCTAssertEqual(feed.renderedFeedImageData(at: 2), makeImageData2())
+        XCTAssertFalse(feed.canLoadMoreFeed)
     }
     
     func test_onLaunch_displaysCachedRemoteFeedWhenCustomerHasNoConnectivity() {
@@ -120,6 +128,9 @@ class FeedAcceptanceTests: XCTestCase {
         case "/essential-feed/v1/feed" where url.query?.contains("after_id=6C9A4772-C13D-4388-8ACA-196DDAD34018") == true:
             return makeSecondFeedPageData()
             
+        case "/essential-feed/v1/feed" where url.query?.contains("after_id=166FCDD7-C9F4-420A-B2D6-CE2EAFA3D82F") == true:
+            return makeLastEmptyFeedPageData()
+            
         case "/essential-feed/v1/image/DAC94E31-542E-4BA2-96FD-6A8EF070CFAD/comments":
             return makeCommentsData()
             
@@ -144,6 +155,10 @@ class FeedAcceptanceTests: XCTestCase {
         return try! JSONSerialization.data(withJSONObject: ["items": [
             ["id": "166FCDD7-C9F4-420A-B2D6-CE2EAFA3D82F", "image": "/image-2"]
         ]])
+    }
+    
+    private func makeLastEmptyFeedPageData() -> Data {
+        return try! JSONSerialization.data(withJSONObject: ["items": []])
     }
     
     private func makeCommentsData() -> Data {
