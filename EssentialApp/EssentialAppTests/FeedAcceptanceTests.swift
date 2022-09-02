@@ -142,7 +142,7 @@ class FeedAcceptanceTests: XCTestCase {
     
     private func makeSecondFeedPageData() -> Data {
         return try! JSONSerialization.data(withJSONObject: ["items": [
-            ["id": "CDC94E31-JDS2-ID12-D29A-6A8EF070CFKS", "image": "/image-2"]
+            ["id": "166FCDD7-C9F4-420A-B2D6-CE2EAFA3D82F", "image": "/image-2"]
         ]])
     }
     
