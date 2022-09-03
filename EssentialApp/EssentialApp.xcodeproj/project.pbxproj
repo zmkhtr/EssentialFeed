@@ -33,6 +33,7 @@
 		BF493E93285620F10072F13E /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF493E92285620F10072F13E /* FeedAcceptanceTests.swift */; };
 		BF493E9528562FFE0072F13E /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF493E9428562FFE0072F13E /* HTTPClientStub.swift */; };
 		BF493E972856304C0072F13E /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF493E962856304C0072F13E /* InMemoryFeedStore.swift */; };
+		BF5CC84E28C3669000CC97FF /* NullStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5CC84D28C3669000CC97FF /* NullStore.swift */; };
 		BF7B2AC5289AAB4900DB5F28 /* CommentsUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7B2AC4289AAB4900DB5F28 /* CommentsUIIntegrationTests.swift */; };
 		BF7B2AC7289AAC2500DB5F28 /* CommentsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7B2AC6289AAC2500DB5F28 /* CommentsUIComposer.swift */; };
 		BFCA00F9285A194B00747012 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA00F8285A194B00747012 /* CombineHelpers.swift */; };
@@ -92,6 +93,7 @@
 		BF493E92285620F10072F13E /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 		BF493E9428562FFE0072F13E /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
 		BF493E962856304C0072F13E /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
+		BF5CC84D28C3669000CC97FF /* NullStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullStore.swift; sourceTree = "<group>"; };
 		BF7B2AC4289AAB4900DB5F28 /* CommentsUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIIntegrationTests.swift; sourceTree = "<group>"; };
 		BF7B2AC6289AAC2500DB5F28 /* CommentsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIComposer.swift; sourceTree = "<group>"; };
 		BFCA00F8285A194B00747012 /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				BF493E7728561EC00072F13E /* WeakRefVirtualProxy.swift */,
 				BF493E7228561EBF0072F13E /* LoadResourcePresentationAdapter.swift */,
 				BF493E7328561EBF0072F13E /* FeedViewAdapter.swift */,
+				BF5CC84D28C3669000CC97FF /* NullStore.swift */,
 				BFFD82D827E621CF002B0F16 /* Assets.xcassets */,
 				BFFD82DA27E621CF002B0F16 /* LaunchScreen.storyboard */,
 				BFFD82DD27E621CF002B0F16 /* Info.plist */,
@@ -308,6 +311,7 @@
 				BFFD82D027E621CD002B0F16 /* AppDelegate.swift in Sources */,
 				BFFD82D227E621CD002B0F16 /* SceneDelegate.swift in Sources */,
 				BF493E7928561EC00072F13E /* LoadResourcePresentationAdapter.swift in Sources */,
+				BF5CC84E28C3669000CC97FF /* NullStore.swift in Sources */,
 				BF493E7828561EC00072F13E /* WeakRefVirtualProxy.swift in Sources */,
 				BF493E7C28561EC00072F13E /* FeedViewAdapter.swift in Sources */,
 				BF7B2AC7289AAC2500DB5F28 /* CommentsUIComposer.swift in Sources */,
